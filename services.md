@@ -26,7 +26,7 @@ These certificates have an expiration period of 24 hours, so automated renewal i
 See [the ACME guide (TODO)](..) to learn how to do this.
 
 
-The root certificate's fingerprint is `811e44a6007a6150677f0ff88a0cd61323b7dc5d89ac1df216d67e2456e11417`, and it can be found in
+The root certificate's fingerprint is `66bd0ed46a5ff69b611395837b3fdf22e8f7da0cf46bed621b3db6e6a0a63a06`, and it can be found in
 [`root_ca.crt`](root_ca.crt).
 New hosts provisioned for the lab should include this certificate in their trust chain to access other hosts.
 
@@ -58,3 +58,8 @@ Acquire::http::Proxy "http://apt-cache.rudn.lab:80";
 At present, it uses the default configuration, which only caches `.deb` files.
 It is possible to allow more file types to be cached; contact the admin team to coordinate this.
 
+
+## Information page: `info.rudn.lab`
+
+This hosts a web server with information about the lab.
+It also uses the certificate authority, so you can test whether you trust it.
