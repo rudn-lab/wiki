@@ -1,0 +1,4 @@
+name: sample-tensorflow
+dependencies:
+  - tensorflow-gpu 
+  - cudatoolkit=10.1
